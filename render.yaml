@@ -5,7 +5,7 @@ services:
     rootDir: .
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn --bind 0.0.0.0:$PORT --chdir admin/admin_site app:app
+    startCommand: gunicorn --bind 0.0.0.0:$PORT admin.admin_site.app:app
     healthCheckPath: /health
     envVars:
       - key: SECRET_KEY
