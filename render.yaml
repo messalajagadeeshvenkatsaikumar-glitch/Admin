@@ -17,7 +17,7 @@ services:
       - key: ADMIN_PASSWORD_HASH
         sync: false
       - key: MAIN_SITE_URL
-        sync: false
+        value: https://what-next-career-guidance-stream-1.onrender.com
       - key: MYSQL_HOST
         sync: false
       - key: MYSQL_PORT

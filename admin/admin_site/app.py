@@ -99,7 +99,10 @@ def ensure_schema():
         conn.close()
 
 # Allow configuring main site URL (used for linking to the public site and static files)
-MAIN_SITE_URL = os.environ.get('MAIN_SITE_URL', 'http://localhost:5000')
+MAIN_SITE_URL = os.environ.get(
+    'MAIN_SITE_URL',
+    'https://what-next-career-guidance-stream-1.onrender.com',
+)
 
 
 def get_db():
